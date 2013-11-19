@@ -82,11 +82,13 @@ function! s:MediumModeDisable()
   endif
 endfunction
 
-function! s:MediumModeToggle()
+function! MediumModeToggle()
   if g:mediummode_enabled
     call s:MediumModeDisable()
+    echo 'You have not yet reached enlightenment..'
   else
     call s:MediumModeEnable()
+    echo 'Mountains are mearly mountains'
   endif
 endfunction
 
